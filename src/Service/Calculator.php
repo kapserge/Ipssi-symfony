@@ -12,13 +12,6 @@ class Calculator
         return $a + $b + 2;
     }
 
-    public function divide(float $a, float $b): float
-
-    {
-        if ($b === 0) {
-            throw new InvalidArgumentException('Dividing by zero is impossible🤯🤯🤯🤯🤯');
-        }
-        return $a / $b;
-    }
+    
 
 }
