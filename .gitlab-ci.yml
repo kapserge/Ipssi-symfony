@@ -1,0 +1,20 @@
+image: "php:7.3"
+
+before_script:
+    -echo "Installation"
+    - php composer.phar install
+stages:
+  - etape1
+  - etape2
+etape1_command1: 
+  stage: etape1
+  script: echo "command 1"
+
+etape1_command2: 
+  stage: etape1
+  script: echo "command 2"
+
+etape2_command1: 
+  stage: etape2
+  script: echo "command 1"
+
